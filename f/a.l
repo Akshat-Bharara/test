@@ -56,6 +56,7 @@ void add_symbol(char * lexeme, int tokenNumber, int lineNum)
 %}
 
 %%
+"#[^\n]" {}
 "#include"      { return INCLUDE; }
 "int"           { return INT; }
 "float"         { return FLOAT; }
