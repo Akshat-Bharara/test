@@ -1,0 +1,80 @@
+=== PROGRAMMING LANGUAGE PARSER ===
+Parsing constructs: if, if-else, for loops
+================================================
+
+Parsing file: inputs/t5.c
+
+Token: FOR
+Token: LPAREN
+Token: IDENTIFIER (i)
+Token: ASSIGN
+Token: NUMBER (1)
+Parsed: Number (1)
+Token: SEMICOLON
+For init: i = expression
+Token: IDENTIFIER (i)
+Parsed: Identifier (i)
+Token: LE
+Relational operator: <=
+Token: NUMBER (5)
+Parsed: Number (5)
+Token: SEMICOLON
+Parsed: Condition (expression relational operator expression)
+Token: IDENTIFIER (i)
+Token: INCREMENT
+For update: i++
+Token: RPAREN
+Token: LBRACE
+Token: FOR
+Token: LPAREN
+Token: IDENTIFIER (j)
+Token: ASSIGN
+Token: NUMBER (1)
+Parsed: Number (1)
+Token: SEMICOLON
+For init: j = expression
+Token: IDENTIFIER (j)
+Parsed: Identifier (j)
+Token: LE
+Relational operator: <=
+Token: IDENTIFIER (i)
+Parsed: Identifier (i)
+Token: SEMICOLON
+Parsed: Condition (expression relational operator expression)
+Token: IDENTIFIER (j)
+Token: INCREMENT
+For update: j++
+Token: RPAREN
+Token: LBRACE
+Token: IF
+Token: LPAREN
+Token: IDENTIFIER (i)
+Parsed: Identifier (i)
+Token: EQ
+Relational operator: ==
+Token: IDENTIFIER (j)
+Parsed: Identifier (j)
+Token: RPAREN
+Parsed: Condition (expression relational operator expression)
+Token: LBRACE
+Token: IDENTIFIER (product)
+Token: ASSIGN
+Token: IDENTIFIER (i)
+Parsed: Identifier (i)
+Token: MULT
+Token: IDENTIFIER (j)
+Parsed: Identifier (j)
+Parsed: Multiplication
+Token: SEMICOLON
+Parsed: Assignment (product = expression)
+Token: RBRACE
+Parsed: Compound statement (block)
+Token: RBRACE
+Parsed: IF statement
+Parsed: Compound statement (block)
+Parsed: FOR loop
+Token: RBRACE
+Parsed: Compound statement (block)
+Parsed: FOR loop
+
+=== PARSING COMPLETED SUCCESSFULLY ===

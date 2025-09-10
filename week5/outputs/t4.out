@@ -1,0 +1,62 @@
+=== PROGRAMMING LANGUAGE PARSER ===
+Parsing constructs: if, if-else, for loops
+================================================
+
+Parsing file: inputs/t4.c
+
+Token: IF
+Token: LPAREN
+Token: IDENTIFIER (score)
+Parsed: Identifier (score)
+Token: GE
+Relational operator: >=
+Token: NUMBER (90)
+Parsed: Number (90)
+Token: RPAREN
+Parsed: Condition (expression relational operator expression)
+Token: LBRACE
+Token: IDENTIFIER (grade)
+Token: ASSIGN
+Token: NUMBER (1)
+Parsed: Number (1)
+Token: SEMICOLON
+Parsed: Assignment (grade = expression)
+Token: RBRACE
+Parsed: Compound statement (block)
+Token: ELSE
+Token: LBRACE
+Token: IF
+Token: LPAREN
+Token: IDENTIFIER (score)
+Parsed: Identifier (score)
+Token: GE
+Relational operator: >=
+Token: NUMBER (80)
+Parsed: Number (80)
+Token: RPAREN
+Parsed: Condition (expression relational operator expression)
+Token: LBRACE
+Token: IDENTIFIER (grade)
+Token: ASSIGN
+Token: NUMBER (2)
+Parsed: Number (2)
+Token: SEMICOLON
+Parsed: Assignment (grade = expression)
+Token: RBRACE
+Parsed: Compound statement (block)
+Token: ELSE
+Token: LBRACE
+Token: IDENTIFIER (grade)
+Token: ASSIGN
+Token: NUMBER (3)
+Parsed: Number (3)
+Token: SEMICOLON
+Parsed: Assignment (grade = expression)
+Token: RBRACE
+Parsed: Compound statement (block)
+Parsed: IF-ELSE statement
+Token: RBRACE
+Parsed: Compound statement (block)
+Parsed: IF-ELSE statement
+
+=== PARSING COMPLETED SUCCESSFULLY ===

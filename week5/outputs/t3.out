@@ -1,0 +1,42 @@
+=== PROGRAMMING LANGUAGE PARSER ===
+Parsing constructs: if, if-else, for loops
+================================================
+
+Parsing file: inputs/t3.c
+
+Token: FOR
+Token: LPAREN
+Token: IDENTIFIER (i)
+Token: ASSIGN
+Token: NUMBER (0)
+Parsed: Number (0)
+Token: SEMICOLON
+For init: i = expression
+Token: IDENTIFIER (i)
+Parsed: Identifier (i)
+Token: LT
+Relational operator: <
+Token: NUMBER (10)
+Parsed: Number (10)
+Token: SEMICOLON
+Parsed: Condition (expression relational operator expression)
+Token: IDENTIFIER (i)
+Token: INCREMENT
+For update: i++
+Token: RPAREN
+Token: LBRACE
+Token: IDENTIFIER (sum)
+Token: ASSIGN
+Token: IDENTIFIER (sum)
+Parsed: Identifier (sum)
+Token: PLUS
+Token: IDENTIFIER (i)
+Parsed: Identifier (i)
+Token: SEMICOLON
+Parsed: Addition
+Parsed: Assignment (sum = expression)
+Token: RBRACE
+Parsed: Compound statement (block)
+Parsed: FOR loop
+
+=== PARSING COMPLETED SUCCESSFULLY ===

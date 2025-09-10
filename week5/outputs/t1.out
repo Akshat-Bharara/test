@@ -1,0 +1,28 @@
+=== PROGRAMMING LANGUAGE PARSER ===
+Parsing constructs: if, if-else, for loops
+================================================
+
+Parsing file: inputs/t1.c
+
+Token: IF
+Token: LPAREN
+Token: IDENTIFIER (x)
+Parsed: Identifier (x)
+Token: LT
+Relational operator: <
+Token: NUMBER (10)
+Parsed: Number (10)
+Token: RPAREN
+Parsed: Condition (expression relational operator expression)
+Token: LBRACE
+Token: IDENTIFIER (y)
+Token: ASSIGN
+Token: NUMBER (5)
+Parsed: Number (5)
+Token: SEMICOLON
+Parsed: Assignment (y = expression)
+Token: RBRACE
+Parsed: Compound statement (block)
+Parsed: IF statement
+
+=== PARSING COMPLETED SUCCESSFULLY ===
